@@ -15,10 +15,15 @@ Advanced Active Directory ACL enumeration tool for discovering privilege escalat
 
 ```powershell
 # Download the script
-iwr -Uri "https://raw.githubusercontent.com/xl337x/wew/main/acl.ps1" -OutFile "acl.ps1"
+iwr -Uri "https://raw.githubusercontent.com/xl337x/wew/refs/heads/main/acl.ps1" -OutFile "acl.ps1"
 
 # Load the script
 . .\acl.ps1
+```
+
+**Alternative - Direct execution:**
+```powershell
+iex (iwr -Uri "https://raw.githubusercontent.com/xl337x/wew/refs/heads/main/acl.ps1" -UseBasicParsing).Content
 ```
 
 ## Usage
